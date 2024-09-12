@@ -1,0 +1,147 @@
+/* Home */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif ;
+    background-color: #FFF2EC;
+    color: #ffffff
+}
+
+/* Navigasi */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 1.2rem 5%;
+    background-color: rgba(254, 221, 232, 0.8);
+    border-bottom: 2px solid #fd89af;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #9c0001;
+    font-style: italic;
+}
+
+.title span {
+    color:#f43575
+}
+
+.menu-navbar a {
+    color:#9c0001;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.menu-navbar a:hover {
+    color: #f43575;
+}
+
+.menu-navbar a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #f43575;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.menu-navbar a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.tombol-navbar a {
+    color: #9c0001;
+    margin: 0 0.5rem;  
+}
+
+.tombol-navbar a:hover {
+    color: #f43575;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* Media Queris */
+
+
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+    display: inline-block;
+    }
+
+    .menu-navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color:rgba(254, 221, 232, 0.8);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+    }
+
+    .menu-navbar.active {
+    right: 0;
+    }
+
+    .menu-navbar a {
+        color: #9c0001;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .menu-navbar a::after {
+        transform-origin: 0 0; 
+    }
+
+    .menu-navbar a:hover::after {
+        transform: scaleX(0.2); 
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+/* End Media Queris */
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;        align-items: center;
+    /* background-image: */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
