@@ -12,6 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #fff2ec;
   color: #ffffff;
+  /* min-width: 2000px; */
 }
 
 /* Navigasi */
@@ -95,10 +96,11 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #f43575;
+  background-image: url('../image/mochii-section.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .hero::after {
@@ -106,7 +108,9 @@ body {
   display: block;
   position: absolute;
   width: 100%;
-  height: 30%;
+  height: 10%;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(1, 1, 3, 1)8%, rgba(255, 255, 255, 0)100%);
 }
 
 .hero .content {
@@ -116,7 +120,7 @@ body {
 
 .hero .content h1 {
   font-size: 5em;
-  color: #fff;
+  color: #f43575;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   line-height: 1.2;
 }
@@ -126,7 +130,9 @@ body {
   margin-top: 1rem;
   line-height: 1.4;
   font-weight: 50;
-  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  text-shadow: 1px 1px 3px rgba
+  (1, 1, 3, 0.5);
+  mix-blend-mode: difference;
 }
 
 .hero .content .cta {
@@ -143,13 +149,6 @@ body {
 
 .cta::after {
   color: #9c0001;
-}
-
-
-.poster {
-  padding: 5%;
-  padding-left: 10%;
-  padding-top: 7%;
 }
 
 /* Media Queris */
@@ -201,6 +200,23 @@ body {
     transform: scaleX(0.2);
   }
 }
+
+/* About Section */
+.about {
+  padding: 10rem 7% 1.4;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  color:#f43575;
+}
+
+.about h2 span {
+  color: #9c0001;
+}
+
 
 /* Mobile Phone */
 @media (max-width: 450px) {
