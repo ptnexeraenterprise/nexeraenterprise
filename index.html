@@ -9,7 +9,7 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet">
+    <li         nk href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet">
 
     <!--Icon-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -46,13 +46,13 @@
     <!--  Menu Section -->
     <section class="menu" id="menu">
         <h2><span>Our</span> Menu</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-           Vero corrupti molestias perferendis, eligendi nesciunt itaque.</p>
+        <p>We provide several menu variants, including<br>
+            Small mochi, Big mochi, and Ice Lychee Tea.</p>
 
         <div class="row">
             <div class="product-card">
                 <div class="product-icons">
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
             <div class="product-image">
                 <img src="image/products/small-mochi.jpeg" alt="Product 1">
@@ -71,15 +71,15 @@
             </div>
             <div class="product-card">
                 <div class="product-icons">
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
             <div class="product-image">
-                <img src="image/products/small-mochi.jpeg" alt="Product 1">
+                <img src="image/products/big-mochi.jpeg" alt="Product 2">
             </div>
                 <div class="product-content">
-                    <h3>Small Mochi</h3>
+                    <h3>Big Mochi</h3>
                     <div class="product-stars">
-                        <i data-feather="star" class="star-full"></i>
+                        <i data-fea+ther="star" class="star-full"></i>
                         <i data-feather="star" class="star-full"></i>
                         <i data-feather="star" class="star-full"></i>
                         <i data-feather="star"></i>
@@ -90,13 +90,13 @@
             </div>
             <div class="product-card">
                 <div class="product-icons">
-                    <a href="#"><i data-feather="eye"></i></a>
+                    <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
                 </div>
             <div class="product-image">
-                <img src="image/products/small-mochi.jpeg" alt="Product 1">
+                <img src="image/products/lychee-tea.jpeg" alt="Product 3">
             </div>
                 <div class="product-content">
-                    <h3>Small Mochi</h3>
+                    <h3>Ice Lychee Tea</h3>
                     <div class="product-stars">
                         <i data-feather="star" class="star-full"></i>
                         <i data-feather="star" class="star-full"></i>
@@ -112,22 +112,48 @@
     <!-- Menu End -->
     <!-- About Section -->
     <section class="about"  id="about">
-        <h2><span>Tentang</span> Kami</h2>
+        <h2><span>About</span> Us</h2>
 
         <div class=row>
             <div class="about-img">
                 <img src="image/aboutt.jpg" alt="Tentang Kami">
             </div>
             <div class="content">
-                <h3>Kenapa memilih mochi kami?</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde consequatur placeat nulla nisi modi minima!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero magnam eveniet tempora vitae consectetur beatae, molestiae libero sequi nemo laudantium.</p>
+                <h3>Why choose our mochi & ice lychee tea?</h3>
+                <p>The combination of mochi and ice lychee tea offers a culinary experience that pampers the taste buds and refreshes. Sweet Mochi 
+                    Combined with fresh ice lychee tea creates a unique flavor harmony. In addition, this business has good prospects because 
+                    Sweet/savory snacks and fresh drinks always have many enthusiasts, especially among young people. 
+                </p>
             </div>
         </div>
     </section>
     <!-- About end -->
     <!-- Footer -->
 
+    <!-- Modal Box Item Detail  -->
+        <div class="modal" id="item-detail-modal">
+            <div class="modal-container">
+                <a href="#" class="close-icon"><i data-feather="x"> </i></a>
+                <div class="modal-content">
+                    <img src="image/products/small-mochi.jpeg" alt="Product 1">
+                    <div class="product-content">
+                        <h3>Small Mochi</h3>
+                        <p>We sell small mochi in packs of 3 with various flavors, including Full Chocolate,
+                            Full Oreo, Full Tiramisu, 
+                            Full Peanuts, Full Matcha, Full Chocolate Strawberry, and can mix flavors.</p>
+                            <div class="product-stars">
+                                <i data-feather="star" class="star-full"></i>
+                                <i data-feather="star" class="star-full"></i>
+                                <i data-feather="star" class="star-full"></i>
+                                <i data-feather="star" class="star-full"></i>
+                                <i data-feather="star"></i>
+                            </div>
+                            <div class="product-price">IDR 9.000 <span>IDR 10.000</span></div>
+                    <a href="https://wa.me/6281290329003/?text=Hallo min, mau pesen mochi rasa"><i class="ri-whatsapp-line"> <span>buy now</span></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- Feather Icon -->
     <script>
         feather.replace();
